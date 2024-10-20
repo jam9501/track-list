@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 100vh;
+    font-family: 'Open Sauce One', sans-serif; 
+    background-color: #121212;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 150px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Open Sauce One', sans-serif; 
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Padding for spacing */
+}
+
+#quiz-section {
+    margin: 20px 0; /* Space above and below quiz section */
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Optional: limit width for readability */
+    text-align: center; /* Center text inside quiz section */
+}
+
+.track {
+    font-family: 'Open Sauce One', sans-serif; 
+    display: flex; /* Use flex to control layout of each track */
+    justify-content: space-between; /* Space between title and genre */
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    width: 100%; /* Ensure tracks take full width of container */
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.genre {
+    font-style: italic; /* Italicize genres */
+    color: #666; /* Grey color for genres */
+    margin-left: 10px; /* Space between track title and genre */
+    white-space: normal; /* Allow wrapping */
+}
+
+#track-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */ 
+    padding: 20px; /* Padding around the list */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
